@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cicle Pedalarte</title>
+		<base target="_blank" />
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<meta charset="UTF-8">
+	</head>
+
+<body>
+	
+<header>
+	<img class=imgLogo src="imagens/PedalarTopo.png" />
+	<address class=ender>
+		Av. Tour de France, 1903<br/>
+		Tel: (21) 8765-4321</br/>
+		<a href="mailto:contato@pedalarte.com.br">contato@pedalarte.com.br</a>
+	</address>
+</header>
+
+
+<nav>
+	<ul>
+		<li><a href="apresentacao.html">Apresentação</a></li>
+		<li><a href="pecas.html">Peças</a></li>
+		<li><a href="bicicletas.html">Bicicletas</a></li>
+		<li><a href="cadastro.html">Cadastro</a></li>
+		<li><a href="compras.html">Compras</a></li>
+	</ul>
+</nav>
+
+
+<section>
+	<form method=post action="mailto:jkastrupb@gmail.com" id="cadastro">
+		<h3>Cadastro</h3>
+		<fieldset>
+			<legend>Identificação</legend>
+			<div class=divLinha>
+				<label class=colPri>E-mail: </label><input type="text" name="email" class=inpGrande>
+			</div>
+			<div class=divLinha>	
+				<label class=colPri>Senha: </label><input type="password" name="senha" class=inpMedio> 
+				<div class=elemDir>
+					<label>Confirme: <input type="password" name="confirmasenha" class=inpMedio></label>
+				</div>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Dados Pessoais</legend>
+			<div class=divLinha>
+				<label class=colPri>Nome: </label><input type="text" name="nome" class=inpGrande>
+			</div>
+			<div class=divLinha>
+				<label class=colPri>Endereço: </label><textarea class=inputTextarea name="endereco"></textarea>
+			</div>
+			<div class=divLinha>
+				<label class=colPri>Telefone: </label><input type="tel" name="telefone" class=inpMedio>
+				<div class=elemDir>
+				<label>Celular: </label><input type="tel" name="celular" class=inpMedio>
+				</div>
+			</div>
+
+			<fieldset class=fsEsq>
+				<legend>Nascimento:</legend>
+				<div class=divLinha2>
+					<input class=numDD type="number" name="dia" min=1 max=31>/<input class=numDD type="number" name="mes" min="1" max="12">/<input class=numQD type="number" name="ano" min="1920" max="2000">
+				</div>
+			</fieldset>
+
+			<div class="elemDir">
+			<fieldset class=fsDir>
+				<legend>Sexo:</legend>
+				<div class=divLinha2>
+					<input type="radio" value="masc" name="sexo"/><label>Masculino</label>
+					<input type="radio" value="fem" name="sexo"/><label>Feminino</label>
+				</div>
+			</fieldset>
+			</div>	
+
+			</fieldset>
+			<div class=divLinha>
+				<div class=botoes>
+					<button type="reset" name="limpar" value="Limpar">Limpar</button>
+ 					<button type="submit" name="limpar" value="Enviar">Enviar</button>
+ 				</div>
+ 			</div>
+  		</form>
+</section>	
+
+
+</body>
+
+</html>
