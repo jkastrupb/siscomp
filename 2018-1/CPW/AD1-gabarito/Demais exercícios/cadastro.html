@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cicle Pedalarte</title>
+		<base target="_blank" />
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<meta charset="UTF-8">
+	</head>
+
+<body>
+	
+<header>
+	<img class="imgLogo" src="imagens/PedalarTopo.png" />
+	<address class=ender>
+		Av. Tour de France, 1903<br/>
+		Tel: (21) 8765-4321</br/>
+		<a href="mailto:contato@pedalarte.com.br">contato@pedalarte.com.br</a>
+	</address>
+</header>
+
+
+<nav>
+	<ul>
+		<li><a href="apresentacao.html">Apresentação</a></li>
+		<li><a href="pecas.html">Peças</a></li>
+		<li><a href="bicicletas.html">Bicicletas</a></li>
+		<li><a href="cadastro.html">Cadastro</a></li>
+		<li><a href="compras.html">Compras</a></li>
+	</ul>
+</nav>
+
+
+<section>
+	<h3>Cadastro</h3>
+	<form method="POST">
+
+	<fieldset><legend>Identificação</legend>
+	    <div class="divLinha">
+			<label for="idEmail" class="colPri">E-mail: </label>
+			<input id="idEmail" class="inpGrande"
+			       type="email" name="TxtEmail" required />
+		</div>
+
+		<div class="divLinha">	
+			<label for="idSenha" class="colPri">Senha: </label>
+			<input id="idSenha" class="inpMedio"
+			       type="password" name="senha" required />
+			<label for="idConf" class="elemDir">Confirme: 
+			<input id="idConf" class=inpMedio 
+			       type="password" name="TxtConf" required /></label>
+	    </div>
+    </fieldset>
+	
+	<fieldset><legend>Dados Pessoais</legend>
+		<div class="divLinha">
+			<label class=colPri>Nome: </label>
+			<input type="text" class="inpGrande"
+			       name="TxtNomeCompleto" />
+		</div>
+
+		<div class="divLinha">
+			<label class="colPri">Endereço: </label>
+			<textarea name="TxtEnder" rows="2" class="inpGrande"></textarea>
+		</div>
+		<div class="divLinha">
+			<label class="colPri">Telefone: 
+			<input type="text" class="inpMedio"
+			       name="TxtTelefone" required />
+			</label>
+
+		    <label class="elemDir">Celular: 
+		    <input type="text" class="inpMedio"
+		           name="TxtCelular" /></label>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+        <div class="divLinha">
+		<fieldset class="fsEsq"><legend>Nascimento:</legend>
+		    <input type="number" name="TxtDiaNasc" class=numDD
+		           min=1 max=31 />/
+		    <input type="number" name="TxtMesNasc" class=numDD 
+		            min="1" max="12" />/
+		    <input type="number" name="TxtAnoNasc" class=numQD
+		            min="1920" max="2000" value="1980" />
+		</fieldset>
+
+		<fieldset class=fsDir><legend>Sexo:</legend>
+			<label>
+				<input type="radio" value="M" 
+				       name="TglSexo" checked/>Masculino
+			</label>
+			<label>
+				<input type="radio" value="F"
+				       name="TglSexo"/>Feminino
+			</label>
+		</fieldset>
+	    </div>
+
+    </fieldset>
+
+
+		<div class="botoes">
+			<input type="reset" value="Limpar" />
+			<input type="submit" value="Enviar" />
+ 		</div>
+
+  	</form>
+</section>	
+
+
+</body>
+
+</html>

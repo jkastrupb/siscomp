@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<title>Cicle Pedalarte</title>
+		<base target="_blank" />
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<meta charset="UTF-8">
+	</head>
+
+<body>
+	
+<header>
+
+	<img class=imgLogo src="imagens/PedalarTopo.png" />
+
+	<address class=ender>
+		Av. Tour de France, 1903<br/>
+		Tel: (21) 8765-4321</br/>
+		<a href="mailto:contato@pedalarte.com.br">contato@pedalarte.com.br</a>
+	</address>
+
+</header>
+
+
+<nav>
+	<ul>
+		<li><a href="apresentacao.html">Apresentação</a></li>
+		<li><a href="pecas.html">Peças</a></li>
+		<li><a href="bicicletas.html">Bicicletas</a></li>
+		<li><a href="cadastro.html">Cadastro</a></li>
+		<li><a href="compras.html">Compras</a></li>
+	</ul>
+</nav>
+
+
+<section>
+	<h3>Compras</h3>
+	<form method="POST">
+	<fieldset><legend>Identificação</legend>
+
+	<div class="linhaCompras">
+	<label class="colPriCompras" for="idEmail">E-mail: </label>
+	<input id="idEmail" class="inpEmail"
+	       type="email" name="TxtEmail" required />
+
+	<label class="elemDir">Senha: 
+	<input class="inpMedio"
+	       type="password" name="TxtSenha" required /></label>
+	</div>
+		
+    <div class="linhaCompras">
+	<b><i>
+		Se você ainda não tem cadastro, clique <a href="cadastro.html">aqui!</a>
+	</i></b>
+	</div>
+
+	</fieldset>
+
+	<fieldset><legend>Lista de Compras e Pagamento</legend>
+
+	<textarea class="elemDir" name="listaPedidos" 
+	          readonly cols="23" rows="14">
+    </textarea>
+
+	<div class="linhaCompras">Produtos:<br/>
+	
+	<select name="selProduto" id="selProduto">
+		<option selected>-----</option>
+			<optgroup label="Guidom">
+ 				<option value="CB">Alumínio CB Reforçado Polido</option>
+ 				<option value="Speed">Alumínio Speed 31,8 X 420MM</option>
+ 			</optgroup>
+ 			<optgroup label="Selim">
+ 				<option  value="RAD7">RAD 7 Comfort</option>
+ 				<option  value="SERFAS">SERFAS E-GEL DDMD-200</option>
+ 			</optgroup>
+ 			<optgroup label="Pedal">
+ 				<option value="Inglês">Inglês Alumínio</option>
+ 			</optgroup>
+ 			 <optgroup label="Bicicleta">
+ 				<option value="MTB">MTB A26 VOLT 1.6 PT/AM</option>
+ 				<option value="Ceci">CALOI A16 CECI BRANCA</option>
+ 				<option value="Poti">POTI A26 Branca/Vermelha</option>
+ 				<option value="Sport">CALOI A26 Sport T19 V21 Marchas</option>
+ 			</optgroup>
+ 		</select>
+
+ 		<input type="button" value="Comprar" />
+ 	</div>
+    <br/>
+
+	<fieldset class=fsEsq><legend>Dados do Cartão</legend>
+        <fieldset class=fsEsq><legend>Bandeira</legend>
+            <label>
+            <input type="radio" value="visa" name="bandeira"checked />Visa
+            </label>		
+            <label>
+            <input type="radio" value="master" name="bandeira"/>Master
+            </label>		
+            <label>
+            <input type="radio" value="amex" name="bandeira"/>Amex
+            </label>	
+        </fieldset>
+<br/>
+<br/>
+<br/>
+<br/>
+
+    <div>
+        <label class="colPriCompras" for="mesVal">Validade: </label>
+        <input class=numDD type="number" name="mescartao" id="mesVal" 
+        min="1" max="12" value="1" />/
+        <input class=numQD type="number" name="anocartao" id="anoVal"
+        min="2018" max="2026" value="2018" />
+    </div>
+    <br/>
+    <div>
+        <label class="colPriCompras" for="numCar">Número: </label>
+        <input type="text" name="cartao" size="20" id="numCar" />
+    </div>
+    </fieldset>
+</fieldset>
+<div class="botoes">
+		<input type="reset" value="Limpar" />
+		<input type="submit" value="Enviar" />
+</div>
+
+
+</form>
+</section>	
+
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+body {
+	background-color: #EEEE33;
+	font-family: "verdana, liberation", sans-serif;
+	font-size: 16px;
+	color: #FF0000;
+
+	}
+
+p.apres {
+	text-align: center;
+	font-size: 18px;
+	font-family:"verdana", "liberation", sans-serif;
+}
+
+img.imgLogo{
+	align-self: left;
+	padding-bottom: 15px;
+	border-bottom: 3px solid;
+	margin-bottom: 6px;
+}
+
+address.ender{
+	text-align: right;
+	font-size: 15px;
+	line-height: 140%;
+	float: right;
+	color: #FF0000
+}
+
+a:link {
+	text-decoration: none;
+	color: #DD0000;
+}	
+
+a:visited {
+	text-decoration: none;
+	color: #CC0000;	
+}
+
+
+/*Utilizados na pagina pecas.html*/
+
+ul {
+	list-style-image: url("imagens/Engrenagem.png");
+}
+
+h3 {
+	color: #000066;
+}
+
+ol.listaPecas {
+	color: #000066;
+	list-style-type: upper-roman;
+}
+
+text.preco {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+/*Fim dos estilos utilizados em preco.html*/
+
+/*Utilizados na pagina bicicletas.html*/
+
+table.tabBike {
+	border-collapse: collapse;
+	margin-top: 6px;
+	background-color: #FFCC44;
+	font: "arial, ubuntu";
+	color:#000066;
+}
+
+th {
+	border: 3px solid #226699;
+	padding: 6px 12px 6px 12px;
+}
+
+td {
+	border: 3px solid #226699;
+	padding: 6px 12px 6px 12px;
+}
+
+th.titulo {
+	color: #FFFF00;
+	background-color: #228855;
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+}
+
+th.linTH {
+	color: #FFFFFF;
+	background-color: #22AA55;
+	font-size: 24px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+th.colTH {
+	color: #FFF;
+	background-color: #2299DD;
+	text-align: left;
+}
+
+td.preco {
+	font-color: #EE0000;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+img.imgBike {
+	width: 70px;
+	height: 70px;
+}
+
+/*Fim dos estilos utilizados em bicicletas.html*/
+
+/*Utilizados na pagina cadastro.html*/
+
+div.divLinha {
+	width: 480px;
+	margin-bottom: 6px;
+}
+
+.botoes {
+	float: right;
+	margin: 20px 10px 0px 10px;
+}
+
+label.colPri {
+	float: left;
+	display: block;
+	width: 90px;
+
+}
+
+.elemDir {
+	float: right;
+	display: block;
+}
+
+
+
+/*Estilos utilizados na pagina cadastro.html*/
+
+fieldset {
+ margin: 20px 10px 0px 10px;
+}
+
+.fsEsq {
+ float: left;
+ display: inline;
+ margin: 0px 0px 0px 0px;
+}
+
+.fsDir {
+ float: right;
+ display: inline;
+ margin: 0px 0px 0px 0px;
+}
+
+/*Fim estilos utilizados na pagina cadastro.html*/
+
+/*Estilos utilizados na pagina compras.html*/
+
+
+.fsEsqCompras {
+	float: left;
+	display: inline;
+}
+
+.fsDirCompras {
+	float: right;
+	display: inline;
+}
+
+/*Fim estilos utilizados na pagina compras.html*/
+
+input.inpGrande {
+	width: 370px;
+}
+
+.inpMedio {
+	width: 120px;
+}
+
+.numDD {
+	width: 30px;
+}
+
+.numQD {
+	width: 50px;
+}
+
+/*Estilos utilizados na pagina compras.html*/
+
+
+.linhaCompras {
+ width: 500px;
+margin-bottom: 6px;
+}
+
+label.colPriCompras {
+ float: left;
+width: 86px;
+display: block;
+}
+
+input.inpEmail { width: 200px; 
+}
+
+/* Fim estilos utilizados na pagina compras.html*/
+
+
+header { 
+	display:block; 
+	margin-bottom: 1px; 
+}
+
+nav { 
+	display:block; 
+	width: 20%; 
+	float: left;
+	line-height: 230%;
+	top-margin: 40px;
+}
+
+section { 
+	display:block; 
+	width: 77%; 
+	float: right; 
+}
