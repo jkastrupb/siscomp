@@ -78,6 +78,7 @@ table.tabBike {
 	background-color: #FFCC44;
 	font: "arial, ubuntu";
 	color:#000066;
+	width: auto;
 }
 
 th {
@@ -98,7 +99,7 @@ th.titulo {
 	font-weight: bold;
 }
 
-th.linTH {
+.linTH {
 	color: #FFFFFF;
 	background-color: #22AA55;
 	font-size: 24px;
@@ -106,7 +107,7 @@ th.linTH {
 	text-align: center;
 }
 
-th.colTH {
+td.colTH {
 	color: #FFF;
 	background-color: #2299DD;
 	text-align: left;
@@ -253,3 +254,20 @@ section {
 	width: 77%; 
 	float: right; 
 }
+/*
+$default_color: #ffffff;
+$primary_color: #f0f0f0;
+
+.bloco-table {
+	h2 {
+		color: $default_color;
+		font-size: 23px;
+	}
+
+	table {
+		th {
+			border: solid 1px $primary_color;
+		}
+	}
+}
+*/
