@@ -31,7 +31,6 @@ a:visited {
 }
 
 
-/*Utilizados na pagina pecas.html*/
 
 ul {
 	list-style-image: url("imagens/Engrenagem.png");
@@ -39,11 +38,6 @@ ul {
 
 h3 {
 	color: #000066;
-}
-
-.h3Center {
-	text-align: center;
-	margin-left: 0px;
 }
 
 ol.listaPecas {
@@ -57,7 +51,7 @@ ol.listaPecas {
     display: block;
     margin-left: auto;
     margin-right: auto;
- }
+}
 
 text.preco {
 	color: #FF0000;
@@ -67,10 +61,6 @@ text.preco {
 button.buttonCenter {
 	align-self: center;
 }
-
-/*Fim dos estilos utilizados em preco.html*/
-
-/*Utilizados na pagina bicicletas.html*/
 
 table.tabBike {
 	border-collapse: collapse;
@@ -120,8 +110,10 @@ td.preco {
 }
 
 img.imgBike {
-	width: 70px;
-	height: 70px;
+	width: auto;
+	height: auto;
+	top: auto;
+	bottom: auto;
 }
 
 .imgLogo{
@@ -137,9 +129,10 @@ img.imgBike {
     margin-right: auto;
 }
 
-/*Fim dos estilos utilizados em bicicletas.html*/
 
-/*Utilizados na pagina cadastro.html*/
+
+
+
 
 div.divLinha {
 	width: 480px;
@@ -165,7 +158,7 @@ label.colPri {
 
 
 
-/*Estilos utilizados na pagina cadastro.html*/
+
 
 fieldset {
  margin: 20px 10px 0px 10px;
@@ -183,9 +176,9 @@ fieldset {
  margin: 0px 0px 0px 0px;
 }
 
-/*Fim estilos utilizados na pagina cadastro.html*/
 
-/*Estilos utilizados na pagina compras.html*/
+
+
 
 
 .fsEsqCompras {
@@ -198,7 +191,7 @@ fieldset {
 	display: inline;
 }
 
-/*Fim estilos utilizados na pagina compras.html*/
+
 
 input.inpGrande {
 	width: 370px;
@@ -216,7 +209,7 @@ input.inpGrande {
 	width: 50px;
 }
 
-/*Estilos utilizados na pagina compras.html*/
+
 
 
 .linhaCompras {
@@ -233,7 +226,7 @@ display: block;
 input.inpEmail { width: 200px; 
 }
 
-/* Fim estilos utilizados na pagina compras.html*/
+
 
 
 header { 
@@ -254,20 +247,4 @@ section {
 	width: 77%; 
 	float: right; 
 }
-/*
-$default_color: #ffffff;
-$primary_color: #f0f0f0;
 
-.bloco-table {
-	h2 {
-		color: $default_color;
-		font-size: 23px;
-	}
-
-	table {
-		th {
-			border: solid 1px $primary_color;
-		}
-	}
-}
-*/

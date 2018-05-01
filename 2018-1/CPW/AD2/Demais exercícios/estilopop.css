@@ -1,0 +1,62 @@
+header { 
+	display:block; 
+	margin-bottom: 1px; 
+}
+
+nav { 
+	display:block; 
+	width: 20%; 
+	float: left;
+	line-height: 230%;
+	top-margin: 40px;
+}
+
+section { 
+	display:block; 
+	width: 100%; 
+	float: right; 
+}
+
+body {
+	background-color: #EEEE33;
+	font-family: "verdana, liberation", sans-serif;
+	font-size: 16px;
+	color: #FF0000;
+}
+
+h3 {
+	color: #000066;
+}
+
+img.imgProduto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ol.listaPecas {
+	color: #000066;
+	list-style-type: upper-roman;
+	display:inline
+}
+
+ul {
+	list-style-image: url("imagens/Engrenagem.png");
+}
+
+text.preco {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.h3Center {
+	text-align: center;
+	margin-left: 0px;
+}
+
+button {
+	margin-left: -23px;
+	position:absolute;
+    top:50%;
+    left:50%;
+}
