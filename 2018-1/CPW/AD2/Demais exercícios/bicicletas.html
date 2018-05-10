@@ -5,6 +5,37 @@
 		<base target="_blank" />
 		<link rel="stylesheet" type="text/css" href="estilo.css">
 		<meta charset="UTF-8">
+		<script>
+            var biciModelo = new Array();
+            biciModelo[0] = [ "MTB VOLT 1.6 PT/AM",
+                              "Bike_MTB_ARO16",
+                              "R$490,00" ];
+            biciModelo[1] = [ "CALOL CECI BRANCA", 
+                              "Bike_Caloi_ARO16", 
+                              "R$469,00" ];
+            biciModelo[2] = [ "POTI Branca/Vermelha", 
+                              "Bike_Poty_ARO26", 
+                              "R$489,00" ];
+            biciModelo[3] = [ "CALOI Sport T19 V21 Marchas", 
+                              "Bike_Caloi_ARO26", 
+                              "R$880,00" ];
+            function Exibe( i ) {
+            var desc = document.getElementById("desc");
+            var foto = document.getElementById("foto");
+            var preco = document.getElementById("preco");
+            desc.innerHTML = biciModelo[i][0]
+            foto.src = "imagens/" + biciModelo[i][1] + ".jpg";
+            preco.innerHTML = biciModelo[i][2];
+            }
+            function Esconde() {
+            var desc = document.GetElementById("desc");
+            var foto = document.GetElementById("foto");
+            var preco = document.GetElementById("preco");
+            desc.innerHTML = "";
+            foto.src = "imagens/vazio.jpg";
+            preco.innerHTML = "";
+            }
+        </script>
 	</head>
 
 <body>
@@ -35,33 +66,6 @@
 
 <section>
 
-<!--<table class=tabBike>
-	
-	<tr>
-		<th class="titulo" colspan="4">Bicicletas</th>
-	</tr>
-	<tr>
-		<th class="linTH">Tipo</th>
-		<th class="linTH">Modelo</th>
-		<th class="linTH"></th>
-	</tr>
-	<tr>
-		<th class=colTH rowspan="2">ARO 16</th>
-		
-		<td>MTB VOLT 1.6 PT/AM</td>
-	
-	<tr>
-		<td>CALOL CECI BRANCA</td>
-		
-	</tr>	
-
-	<tr>
-		<th class=colTH rowspan="2">ARO 26</th>
-
-		<td>POTI Branca/Vermelha</td>
-		
-	<tr>
-		<td>CALOI Sport T19 V21 Marchas</td>-->
 
 <table class="tabBike">
   <tr>
@@ -70,22 +74,28 @@
   <tr>
     <td class="linTH">Tipo</td>
     <td class="linTH">Modelo</td>
-    <td class="linTH" width="100px"></td>
+    <td class="linTH" width="100px"><span id="desc"></span></td>
   </tr>
   <tr>
     <td class="colTH" rowspan="2">ARO 16</td>
-    <td>MTB VOLT 1.6 PT/AM</td>
-    <td rowspan="4"><img class=imgBike  src="imagens/Vazio.jpg"></td>
+    <td><a target="_self" href="javascript:Exibe(0);">
+    MTB VOLT 1.6 PT/AM</a></td>
+    <td rowspan="4"><img id="foto" class=imgBike  src="imagens/Vazio.jpg">
+ <br />
+    <p align="center" class="preco"><span id="preco"></span></td>
   </tr>
   <tr>
-    <td class="tg-us36">CALOL CECI BRANCA</td>
+    <td><a target="_self" href="javascript:Exibe(1);">
+    CALOL CECI BRANCA</a></td>
   </tr>
   <tr>
     <td class=colTH rowspan="2">ARO 18</td>
-    <td>POTI Branca/Vermelha</td>
+    <td><a target="_self" href="javascript:Exibe(2);">
+    POTI Branca/Vermelha</a></td>
   </tr>
   <tr>
-    <td>CALOI Sport T19 V21 Marchas</td>
+    <td><a target="_self" href="javascript:Exibe(3);">
+    CALOI Sport T19 V21 Marchas</a></td>
   </tr>
 </table>
 
