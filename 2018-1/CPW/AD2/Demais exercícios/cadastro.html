@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="estilo.css">
 		<meta charset="UTF-8">
 		<script language="javascript" type="text/javascript">
+			
 			function validarTel() {
 				var TxtTelefone = cadastro.TxtTelefone.value
 
@@ -29,7 +30,6 @@
 					alert('Celular deve conter apenas dígitos de 0 a 9!')
 				}
 
-				
 			}
 	    </script>
 
@@ -93,12 +93,13 @@
 		<div class="divLinha">
 			<label class="colPri">Telefone: 
 			<input type="text" class="inpMedio"
-			       name="TxtTelefone"  onfocusout="return validarCel()" required />
+			       name="TxtTelefone"  onblur="return validarTel()" required />
 			</label>
 
 		    <label class="elemDir">Celular: 
 		    <input type="text" class="inpMedio"
-		           name="TxtCelular" onfocusout="return validarTel()" /></label>
+		           name="TxtCelular" onblur="return validarCel()" />
+		      </label>
 		</div>
 		<br/>
 		<br/>
