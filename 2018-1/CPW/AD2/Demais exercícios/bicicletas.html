@@ -5,37 +5,8 @@
 		<base target="_blank" />
 		<link rel="stylesheet" type="text/css" href="estilo.css">
 		<meta charset="UTF-8">
-		<script>
-            var biciModelo = new Array();
-            biciModelo[0] = [ "MTB VOLT 1.6 PT/AM",
-                              "Bike_MTB_ARO16",
-                              "R$490,00" ];
-            biciModelo[1] = [ "CALOL CECI BRANCA", 
-                              "Bike_Caloi_ARO16", 
-                              "R$469,00" ];
-            biciModelo[2] = [ "POTI Branca/Vermelha", 
-                              "Bike_Poty_ARO26", 
-                              "R$489,00" ];
-            biciModelo[3] = [ "CALOI Sport T19 V21 Marchas", 
-                              "Bike_Caloi_ARO26", 
-                              "R$880,00" ];
-            function Exibe( i ) {
-            var desc = document.getElementById("desc");
-            var foto = document.getElementById("foto");
-            var preco = document.getElementById("preco");
-            desc.innerHTML = biciModelo[i][0]
-            foto.src = "imagens/" + biciModelo[i][1] + ".jpg";
-            preco.innerHTML = biciModelo[i][2];
-            }
-            function Esconde() {
-            var desc = document.GetElementById("desc");
-            var foto = document.GetElementById("foto");
-            var preco = document.GetElementById("preco");
-            desc.innerHTML = "";
-            foto.src = "imagens/vazio.jpg";
-            preco.innerHTML = "";
-            }
-        </script>
+    <script src="main.js"></script>
+
 	</head>
 
 <body>
