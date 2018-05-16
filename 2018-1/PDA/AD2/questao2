@@ -1,0 +1,39 @@
+Variáveis públicas
+v[], tam, pos, mediana
+
+procedimento leVetor
+
+início
+
+para i <- 1 até tam faça
+    imprima 'Elemento', i, '?'
+    leia v[i]
+    proximo i
+
+fim
+
+procedimento achaMediana
+
+início
+
+    se (tam mod 2 = 0) então
+    pos ← tam / 2
+    mediana ← (v[pos] + v[pos+1]) / 2
+
+senão
+
+    pos ← (tam + 1) / 2
+    mediana ← v[pos]
+
+fim
+
+programa principal
+
+início
+ imprima 'Quantidade de numeros'
+ leia tam
+ leVetor
+ achaMediana
+ imprima 'Mediana = ', mediana
+
+fim

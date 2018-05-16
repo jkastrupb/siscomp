@@ -163,6 +163,16 @@ label.colPri {
 	display: block;
 }
 
+.elemDirBaixo {
+
+    float: right;
+	display: block;
+	vertical-align: bottom;
+}
+
+
+}
+
 
 
 
