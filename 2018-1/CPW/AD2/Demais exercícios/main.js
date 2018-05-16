@@ -70,6 +70,9 @@ function abrir(url) {
 
 /*Funções usadas no arquivo compras.html*/
 
+function listaProd() {
+var selProduto = document.getElementById("selProduto")
+
 var tipoProd = new Array();
 	tipoProd[0] = [ "Guidom" ];
 	tipoProd[1] = [ "Selim" ];
@@ -78,7 +81,7 @@ var tipoProd = new Array();
 	tipoProd[4] = [ "Bike 26"];
 
 var descvalorProd = new Array();
-    descvalorProd[0] = [ tipoProd[0] "Alumínio CB Reforçado Polido", "R$ 35,00"]
+    descvalorProd[0] = [ tipoProd[0], "Alumínio CB Reforçado Polido", "R$ 35,00"]
     descvalorProd[1] = [ tipoProd[0], "Alumínio Speed 31,8 X 420MM", "R$ 130,00"]
     descvalorProd[2] = [ tipoProd[1], "RAD 7 Comfort", "R$ 49,00"]
     descvalorProd[3] = [ tipoProd[1], "SERFAS E-GEL DDMD-200", "R$ 199,00"]
@@ -89,5 +92,17 @@ var descvalorProd = new Array();
     descvalorProd[8] = [ tipoProd[4], "CALOI Sport T19 V21 Marchas", "R$ 880,00"]
 
 
+/*function AdicionaGrupo(sel, lab, items) {
+    var i, 
+        len = descvalorProd.length
+        grupo = document.createElement('tipoProd');
 
-
+    grupo.label = lab;
+    for (i = 0; i < len; ++i) {
+        produto = document.createElement('descvalorProd[i][1]');
+        gr.appendChild(produto);
+    }
+    sel.appendChild(gr);
+    return gr;
+}
+*/
