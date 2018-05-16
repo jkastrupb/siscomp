@@ -1,0 +1,92 @@
+[QUESTÃO 1]
+
+variáveis públicas
+ lista[]
+
+procedimento estica
+
+início
+    listaAux[]
+    comp <- comprimento(lista)
+    item <- 1
+    para i ← 1 até comp faça
+        se (lista[i] mod 2 = 0) então
+        
+            listaAux[item] ← lista[i] / 2
+         	item <- item + 1
+            listaAux[item] ← lista[i] / 2
+            item <- item + 1
+                    
+        senão 
+
+         	listaAux[item] ← ((lista[i] + 1) / 2)
+         	item <- item + 1
+         	listaAux[item] ← ((lista[i] - 1) / 2)
+         	item <- item + 1
+
+        fimse
+
+    proximo i
+
+    listaAux = lista
+
+fim
+
+
+programa teste
+
+início
+
+ lista [18, 7, 4, 24, 11]
+ estica
+ imprima lista
+
+fim
+
+
+
+
+
+
+[QUESTÃO 2]
+
+
+Variáveis públicas
+v[], tam, pos, mediana
+
+procedimento leVetor
+
+início
+
+para i <- 1 até tam faça
+    imprima 'Elemento', i, '?'
+    leia v[i]
+    proximo i
+
+fim
+
+procedimento achaMediana
+
+início
+
+    se (tam mod 2 = 0) então
+    pos ← tam / 2
+    mediana ← (v[pos] + v[pos+1]) / 2
+
+senão
+
+    pos ← (tam + 1) / 2
+    mediana ← v[pos]
+
+fim
+
+programa principal
+
+início
+ imprima 'Quantidade de numeros'
+ leia tam
+ leVetor
+ achaMediana
+ imprima 'Mediana = ', mediana
+
+fim
