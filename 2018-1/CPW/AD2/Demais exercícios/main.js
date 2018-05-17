@@ -70,39 +70,64 @@ function abrir(url) {
 
 /*Funções usadas no arquivo compras.html*/
 
-function listaProd() {
-var selProduto = document.getElementById("selProduto")
-
-var tipoProd = new Array();
-	tipoProd[0] = [ "Guidom" ];
-	tipoProd[1] = [ "Selim" ];
-	tipoProd[2] = [ "Pedal" ];
-	tipoProd[3] = [ "Bike 16"];
-	tipoProd[4] = [ "Bike 26"];
-
-var descvalorProd = new Array();
-    descvalorProd[0] = [ tipoProd[0], "Alumínio CB Reforçado Polido", "R$ 35,00"]
-    descvalorProd[1] = [ tipoProd[0], "Alumínio Speed 31,8 X 420MM", "R$ 130,00"]
-    descvalorProd[2] = [ tipoProd[1], "RAD 7 Comfort", "R$ 49,00"]
-    descvalorProd[3] = [ tipoProd[1], "SERFAS E-GEL DDMD-200", "R$ 199,00"]
-    descvalorProd[4] = [ tipoProd[2], "Inglês Alumínio", "R$ 27,00"]
-    descvalorProd[5] = [ tipoProd[3], "MTB VOLT 1.6 PT/AM", "R$ 490,00"]
-    descvalorProd[6] = [ tipoProd[3], "CALOL CECI BRANCA", "R$ 469,00"]
-    descvalorProd[7] = [ tipoProd[4], "POTI Branca/Vermelha", "R$ 489,00"]
-    descvalorProd[8] = [ tipoProd[4], "CALOI Sport T19 V21 Marchas", "R$ 880,00"]
 
 
-/*function AdicionaGrupo(sel, lab, items) {
-    var i, 
-        len = descvalorProd.length
-        grupo = document.createElement('tipoProd');
 
-    grupo.label = lab;
-    for (i = 0; i < len; ++i) {
-        produto = document.createElement('descvalorProd[i][1]');
-        gr.appendChild(produto);
-    }
-    sel.appendChild(gr);
-    return gr;
+function listaProdutos() {
+
+var select = document.getElementById("selProduto")
+
+var tipoProd = ["Guidom", "Selim", "Pedal", "Bike 16", "Bike 26"];
+
+var detalhesProd = [
+	[
+    	["Alumínio CB Reforçado Polido", "R$ 35,00"],                      //tipoProd[0] 
+    	["Alumínio Speed 31,8 X 420MM", "R$ 130,00"]
+    ],
+    [
+    	["RAD 7 Comfort", "R$ 49,00"],                                     //tipoProd[1]
+    	["SERFAS E-GEL DDMD-200", "R$ 199,00"]
+    ],  
+    [
+    	["Inglês Alumínio", "R$ 27,00"]                                    //tipoProd[2]
+    ],
+    [
+    	["MTB VOLT 1.6 PT/AM", "R$ 490,00"],                               //tipoProd[3]
+    	["CALOL CECI BRANCA", "R$ 469,00"]
+    ],
+    [
+    	["POTI Branca/Vermelha", "R$ 489,00"],                             //tipoProd[4]
+    	["CALOI Sport T19 V21 Marchas", "R$ 880,00"]
+    ]
+
+    ]
+
+	for (i = 0; i < tipoProd.length; i++) {
+		var optgroup = document.createElement("optgroup");
+		optgroup.label = tipoProd[i];
+		var group_options = detalhesProd[i];
+	
+	for (j = 0; j < group_options.length; j++) {
+		var option = document.createElement("option");
+		option.text = group_options[j][0];
+		option.value = j;
+		optgroup.appendChild(option);
+	}
+	select.appendChild(optgroup);
+	}
 }
-*/
+
+/*Tentativa questão 4c). Não funcionou :(
+
+function adicionaItem() {
+
+var select = document.getElementById("selProduto")
+var option = option.text = group_options[j][0]
+var textarea = document.getElementById("listaPedidos")
+var button = document.getElementById("comprar")
+
+var selectedProduct[i] = document.getElementById("selProduto".option).selectedIndex;
+
+textarea.writeIn = selectedProduct[i]
+
+}*/

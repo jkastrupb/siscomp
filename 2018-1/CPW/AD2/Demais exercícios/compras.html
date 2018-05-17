@@ -4,6 +4,7 @@
 		<base target="_blank" />
 		<link rel="stylesheet" type="text/css" href="estilo.css">
 		<meta charset="UTF-8">
+		<script src="main.js"></script>
 
 	</head>
 
@@ -59,35 +60,22 @@
 
 	<fieldset><legend>Lista de Compras e Pagamento</legend>
 
-	<textarea class="elemDir" name="listaPedidos" 
+	<textarea class="elemDir" name="listaPedidos" id="listaPedidos"
 	          readonly cols="23" rows="14">
     </textarea>
     
 
 	<div class="linhaCompras">Produtos:<br/>
 	
-	<select name="selProduto" id="selProduto">
-		<option selected>-----</option>
-			<optgroup label="Guidom">
- 				<option value="CB">Alumínio CB Reforçado Polido</option>
- 				<option value="Speed">Alumínio Speed 31,8 X 420MM</option>
- 			</optgroup>
- 			<optgroup label="Selim">
- 				<option  value="RAD7">RAD 7 Comfort</option>
- 				<option  value="SERFAS">SERFAS E-GEL DDMD-200</option>
- 			</optgroup>
- 			<optgroup label="Pedal">
- 				<option value="Inglês">Inglês Alumínio</option>
- 			</optgroup>
- 			 <optgroup label="Bicicleta">
- 				<option value="MTB">MTB A26 VOLT 1.6 PT/AM</option>
- 				<option value="Ceci">CALOI A16 CECI BRANCA</option>
- 				<option value="Poti">POTI A26 Branca/Vermelha</option>
- 				<option value="Sport">CALOI A26 Sport T19 V21 Marchas</option>
- 			</optgroup>
- 		</select>
 
- 		<input type="button" value="Comprar" />
+    <select id="selProduto">
+		<option>-----</option>
+    </select>
+
+    <button onclick="listaProdutos()">Exibir produtos</button>
+
+
+	<input type="button" value="Comprar" id="comprar" onclick="adicionaItem()" />
  	</div>
     <br/>
 
