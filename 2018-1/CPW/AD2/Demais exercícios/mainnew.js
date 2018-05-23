@@ -70,61 +70,26 @@ function abrir(url) {
 
 /*Funções usadas no arquivo compras.html*/
 
-function listaProdutos() {
-
-var select = document.getElementById("selProduto")
+var selProduto = document.getElementById("selProduto")
 
 var tipoProd = ["Guidom", "Selim", "Pedal", "Bike 16", "Bike 26"];
 
-var detalhesProd = [
-	[
-    	["Alumínio CB Reforçado Polido", "R$ 35,00"],                      //tipoProd[0] 
-    	["Alumínio Speed 31,8 X 420MM", "R$ 130,00"]
-    ],
-    [
-    	["RAD 7 Comfort", "R$ 49,00"],                                     //tipoProd[1]
-    	["SERFAS E-GEL DDMD-200", "R$ 199,00"]
-    ],  
-    [
-    	["Inglês Alumínio", "R$ 27,00"]                                    //tipoProd[2]
-    ],
-    [
-    	["MTB VOLT 1.6 PT/AM", "R$ 490,00"],                               //tipoProd[3]
-    	["CALOL CECI BRANCA", "R$ 469,00"]
-    ],
-    [
-    	["POTI Branca/Vermelha", "R$ 489,00"],                             //tipoProd[4]
-    	["CALOI Sport T19 V21 Marchas", "R$ 880,00"]
-    ]
+var descvalorProd[tipoProd[0]] = 
+    [["Alumínio CB Reforçado Polido", "R$ 35,00"],
+    ["Alumínio Speed 31,8 X 420MM", "R$ 130,00"]]
+    
+var descvalorProd[tipoProd[1]] = 
+    [["RAD 7 Comfort", "R$ 49,00"],
+    ["SERFAS E-GEL DDMD-200", "R$ 199,00"]]
 
-    ]
+var descvalorProd[tipoProd[2]] = 
+    [["Inglês Alumínio", "R$ 27,00"]]
 
-	for (i = 0; i < tipoProd.length; i++) {
-		var optgroup = document.createElement("optgroup");
-		optgroup.label = tipoProd[i];
-		var group_options = detalhesProd[i];
-	
-	for (j = 0; j < group_options.length; j++) {
-		var option = document.createElement("option");
-		option.text = group_options[j][0];
-		option.value = j;
-		optgroup.appendChild(option);
-	}
-	select.appendChild(optgroup);
-	}
-}
+var descvalorProd[tipoProd[3]] = 
+    [["MTB VOLT 1.6 PT/AM", "R$ 490,00"],
+    ["CALOL CECI BRANCA", "R$ 469,00"]]
 
-/*Tentativa questão 4c). Não funcionou :(
+var descvalorProd[tipoProd[4]] = 
+    [["POTI Branca/Vermelha", "R$ 489,00"], 
+    ["CALOI Sport T19 V21 Marchas", "R$ 880,00"]]
 
-function adicionaItem() {
-
-var select = document.getElementById("selProduto")
-var option = option.text = group_options[j][0]
-var textarea = document.getElementById("listaPedidos")
-var button = document.getElementById("comprar")
-
-var selectedProduct[i] = document.getElementById("selProduto".option).selectedIndex;
-
-textarea.writeIn = selectedProduct[i]
-
-}*/
